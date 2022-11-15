@@ -8,7 +8,6 @@ interface Props extends React.PropsWithChildren{
 
 const Alert: React.FC<Props> = ({type, show, onDismiss, children}) => {
   let className = "alert alert-dismissible alert-";
-
   let btnStyle = {display: 'block'};
 
   if (onDismiss === undefined){
@@ -18,7 +17,7 @@ const Alert: React.FC<Props> = ({type, show, onDismiss, children}) => {
   return (
     <>
       <div
-        className={className + type}
+        className={className + type + ' w-75 m-auto mb-3'}
         style={{display: show ? 'block' : 'none'}}
       >
         {children}

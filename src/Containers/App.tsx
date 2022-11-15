@@ -14,15 +14,17 @@ function App() {
 
   return (
     <>
-      <button
-        className="btn btn-primary"
-        onClick={modalIsOpen}
-      >Show modal</button>
+      <div className="m-5">
+        <button
+          className="btn btn-primary"
+          onClick={modalIsOpen}
+        >Show modal</button>
 
-      <button
-        className="btn btn-danger ms-4"
-        onClick={alertIsShow}
-      >Show alert</button>
+        <button
+          className="btn btn-danger ms-4"
+          onClick={alertIsShow}
+        >Show alert</button>
+      </div>
 
       <Modal
         show={showModal}
