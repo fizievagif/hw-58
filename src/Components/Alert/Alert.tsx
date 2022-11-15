@@ -6,7 +6,7 @@ interface Props extends React.PropsWithChildren{
   onDismiss?: React.MouseEventHandler;
 }
 
-const Alert: React.FC<Props> = ({type, show, onDismiss, children}) => {
+const AlertWin: React.FC<Props> = ({type, show, onDismiss, children}) => {
   let className = "alert alert-dismissible alert-";
   let btnStyle = {display: 'block'};
 
@@ -27,4 +27,4 @@ const Alert: React.FC<Props> = ({type, show, onDismiss, children}) => {
   );
 };
 
-export default Alert;
+export default AlertWin;
